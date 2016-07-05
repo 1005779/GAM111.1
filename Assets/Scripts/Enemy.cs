@@ -11,13 +11,13 @@ public class Enemy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        //gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = transform.position + Vector3.forward * moveSpeed * Time.deltaTime; 
+        transform.Translate(Vector3.forward * moveSpeed * Time.deltaTime);
 	
 	}
 
