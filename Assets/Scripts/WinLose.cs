@@ -15,7 +15,7 @@ public class WinLose : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
+        Text();
         time = PlayerPrefs.GetFloat("Time");
         score = PlayerPrefs.GetInt("Score");
         WL = PlayerPrefs.GetString("WinLose");
@@ -29,7 +29,9 @@ public class WinLose : MonoBehaviour {
 
     public void Text()
     {
-
+        WinLose.text = WL;
+        Time.text = "Time: " + time;
+        Score.text = "Score: " + score;
     }
 
 }
