@@ -13,13 +13,15 @@ public class Buttons : MonoBehaviour {
 	
 	}
 
+    // commenting these out so the game doesnt keep breaking
+
     public void Play()
     {
-        Application.LoadLevel("Level-1");
+        //Application.LoadLevel("Level-1");
     }
 
     public void Main()
     {
-        Application.LoadLevel("Main");
+        //Application.LoadLevel("Main");
     }
 }
