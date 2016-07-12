@@ -11,6 +11,7 @@ public class Spawn : MonoBehaviour {
     public float spawnInterval;
     public float spawnTimer;
     public float timer;
+    public float constant = 1.0f;
 
 
 	// Use this for initialization
@@ -30,7 +31,7 @@ public class Spawn : MonoBehaviour {
         timer += Time.deltaTime;
 
         // As timer goes up spawnInterval Goes Down
-        spawnInterval = Mathf.Log(timer) / Mathf.Log(2);
+        spawnInterval = -timer + constant;
         print(spawnInterval);
     }
 

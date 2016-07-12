@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Projectile : ballistics {
+public class Projectile : MonoBehaviour {
 
     public float lifeTime = 30.0f;
 

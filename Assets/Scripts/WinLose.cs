@@ -9,7 +9,7 @@ public class WinLose : MonoBehaviour {
     public int score;
 
     // Text for UI
-    public Text WinLose;
+    public Text WiLo;
     public Text Time;
     public Text Score;
 
@@ -29,7 +29,7 @@ public class WinLose : MonoBehaviour {
 
     public void Text()
     {
-        WinLose.text = WL;
+        WiLo.text = WL;
         Time.text = "Time: " + time;
         Score.text = "Score: " + score;
     }

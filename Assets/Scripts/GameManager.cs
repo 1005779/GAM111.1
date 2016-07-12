@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour {
             PlayerPrefs.SetInt("Score", score);
 
             // Loads Next Scene
-            Application.LoadLevel("Win/Lose");
+            Application.LoadLevel("WinLose");
         }
     }
 }
